@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * @package     Getsquare_Adminpayments
+ * @author      Getsquare info@getsquare.co.uk
+ * @copyright   2014 GetSquare
+ */
 class Getsquare_Adminpayments_Model_Observer
 {
     public function check(Varien_Event_Observer $observer)
