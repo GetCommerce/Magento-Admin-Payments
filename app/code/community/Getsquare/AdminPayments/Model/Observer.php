@@ -6,13 +6,23 @@
  */
 class Getsquare_Adminpayments_Model_Observer
 {
-    public function check(Varien_Event_Observer $observer)
+    /**
+     * Enable Payement Methods as per the the
+     * store config
+     * 
+     * @param  Varien_Event_Observer $observer
+     * @return void
+     */
+    public function enablePayementMethods(Varien_Event_Observer $observer)
     {
+        $config = Mage::getStoreConfig('adminpayments/general/active');
+        if (!$config) {
+            return;
+        }
         $methodInstance = $observer->getEvent();
         $paymentMethod = $methodInstance->getMethodInstance();
         $result = $observer->getResult();
-        $config = Mage::getStoreConfig('adminpayments/general/active');
-        $adminPayments = explode(',',$config);
+        $adminPayments = explode(',', $config);
         if (in_array($paymentMethod->getCode(), $adminPayments)
                 && false == $result->isAvailable) {
                 $result->isAvailable = true;
