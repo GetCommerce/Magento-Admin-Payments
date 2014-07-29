@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Getsquare_AdminPayments>
+            <version>0.1.0</version>
+        </Getsquare_AdminPayments>
+    </modules>
+    <global>
+        <helpers>
+            <adminpayments>
+                <class>Getsquare_AdminPayments_Helper</class>
+            </adminpayments>
+        </helpers>
+        <models>
+            <adminpayments>
+                <class>Getsquare_Adminpayments_Model</class>
+            </adminpayments>
+        </models>
+    </global>
+    <adminhtml>
+        <events>
+            <payment_method_is_active>
+                <observers>
+                    <getsqaure_admin_payments>
+                        <type>model</type>
+                        <class>Getsquare_Adminpayments_Model_Observer</class>
+                        <method>check</method>
+                    </getsqaure_admin_payments>
+                </observers>
+            </payment_method_is_active>
+        </events>
+    </adminhtml>
+</config>
