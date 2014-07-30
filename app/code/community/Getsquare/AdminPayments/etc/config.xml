@@ -21,11 +21,11 @@
         <events>
             <payment_method_is_active>
                 <observers>
-                    <getsqaure_admin_payments>
+                    <getsquare_admin_payments>
                         <type>model</type>
                         <class>Getsquare_Adminpayments_Model_Observer</class>
                         <method>enablePayementMethods</method>
-                    </getsqaure_admin_payments>
+                    </getsquare_admin_payments>
                 </observers>
             </payment_method_is_active>
         </events>

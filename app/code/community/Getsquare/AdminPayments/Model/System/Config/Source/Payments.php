@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Getsquare_Adminpayments
- * @author      Getsquare info@getsquare.co.uk
+ * @author      Getsquare magento@getsquare.co.uk
  * @copyright   2014 GetSquare
  */
 class Getsquare_Adminpayments_Model_System_Config_Source_Payments
