@@ -2,7 +2,7 @@
 <config>
    <sections>
         <adminpayments translate="label" module="adminpayments">
-            <label>Getsquare - Admin Payments</label>
+            <label>GetSquare - Admin Payments</label>
             <tab>sales</tab>
             <frontend_type>text</frontend_type>
             <sort_order>57</sort_order>
