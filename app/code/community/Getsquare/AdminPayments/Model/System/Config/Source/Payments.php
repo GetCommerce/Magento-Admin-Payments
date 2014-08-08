@@ -13,13 +13,16 @@ class Getsquare_Adminpayments_Model_System_Config_Source_Payments
      */
     public function toOptionArray()
     {
-        $methods = Mage::helper('payment')->getStoreMethods();
-        $internalMethods = array();
-        foreach ($methods as $method) {
-            if($method->canUseInternal()) {
+        $methods = Mage::helper('payment')->getPaymentMethods();
+        foreach ($methods as $methodCode => $methodData) {
+            $methodInstance = Mage::getModel($methodData['model']);
+            if(!$methodInstance) {
+                continue;
+            }
+            if($methodInstance->canUseInternal()) {
                 $internalMethods[] = array(
-                    'value' => $method->getCode(),
-                    'label' => $method->getTitle()
+                    'value' => $methodInstance->getCode(),
+                    'label' => $methodInstance->getTitle()
                 );
             }
         }
