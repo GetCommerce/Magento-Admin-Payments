@@ -13,7 +13,7 @@
         </helpers>
         <models>
             <adminpayments>
-                <class>Getsquare_Adminpayments_Model</class>
+                <class>Getsquare_AdminPayments_Model</class>
             </adminpayments>
         </models>
     </global>
@@ -23,7 +23,7 @@
                 <observers>
                     <getsquare_admin_payments>
                         <type>model</type>
-                        <class>Getsquare_Adminpayments_Model_Observer</class>
+                        <class>Getsquare_AdminPayments_Model_Observer</class>
                         <method>enablePayementMethods</method>
                     </getsquare_admin_payments>
                 </observers>
