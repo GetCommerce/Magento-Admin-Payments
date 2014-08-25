@@ -1,10 +1,10 @@
 <?php
 /**
- * @package     Getsquare_Adminpayments
+ * @package     Getsquare_AdminPayments
  * @author      Getsquare magento@getsquare.co.uk
  * @copyright   2014 GetSquare
  */
-class Getsquare_Adminpayments_Model_Observer
+class Getsquare_AdminPayments_Model_Observer
 {
     /**
      * Enable Payement Methods as per the the
