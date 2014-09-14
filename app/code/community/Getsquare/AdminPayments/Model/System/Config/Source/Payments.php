@@ -15,6 +15,9 @@ class Getsquare_AdminPayments_Model_System_Config_Source_Payments
     {
         $methods = Mage::helper('payment')->getPaymentMethods();
         foreach ($methods as $methodCode => $methodData) {
+            if(!isset($methodData['model'])){
+                continue;
+            }
             $methodInstance = Mage::getModel($methodData['model']);
             if(!$methodInstance) {
                 continue;
