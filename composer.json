@@ -1,0 +1,18 @@
+{
+    "name": "getsquare/magento-adminpayments",
+    "type": "magento-module",
+    "description": "A Magento extension which allows compatible Payment Methods to be enabled for the Admin (backend) only",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Ross Knight",
+            "email":"ross@getsquare.co.uk"
+        },
+        {
+            "name":"Jonathan Day",
+            "email":"jonathan@aligent.com.au"
+        }
+    ]
+}
