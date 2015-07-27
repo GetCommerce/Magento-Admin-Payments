@@ -7,13 +7,13 @@
 class Getsquare_AdminPayments_Model_Observer
 {
     /**
-     * Enable Payement Methods as per the the
+     * Enable Payment Methods as per the the
      * store config
      * 
      * @param  Varien_Event_Observer $observer
      * @return void
      */
-    public function enablePayementMethods(Varien_Event_Observer $observer)
+    public function enablePaymentMethods(Varien_Event_Observer $observer)
     {
         $methodInstance = $observer->getEvent();
         $paymentMethod = $methodInstance->getMethodInstance();

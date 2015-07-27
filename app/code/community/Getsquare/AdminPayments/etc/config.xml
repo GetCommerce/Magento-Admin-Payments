@@ -24,7 +24,7 @@
                     <getsquare_admin_payments>
                         <type>model</type>
                         <class>Getsquare_AdminPayments_Model_Observer</class>
-                        <method>enablePayementMethods</method>
+                        <method>enablePaymentMethods</method>
                     </getsquare_admin_payments>
                 </observers>
             </payment_method_is_active>
