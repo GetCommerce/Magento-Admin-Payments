@@ -7,7 +7,7 @@
 class Getsquare_AdminPayments_Model_Observer
 {
     /**
-     * Enable Payment Methods as per the the
+     * Enable Payment Methods as per the
      * store config
      * 
      * @param  Varien_Event_Observer $observer
