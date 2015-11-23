@@ -1,2 +1,2 @@
-app/code/community/Getsquare/AdminPayments/    app/code/community/Getsquare/AdminPayments
-app/etc/modules/Getsquare_AdminPayments.xml    app/etc/modules/Getsquare_AdminPayments.xml
+app/code/community/GetCommerce/AdminPayments/    app/code/community/GetCommerce/AdminPayments
+app/etc/modules/GetCommerce_AdminPayments.xml    app/etc/modules/GetCommerce_AdminPayments.xml

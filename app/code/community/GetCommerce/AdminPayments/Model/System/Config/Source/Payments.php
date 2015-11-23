@@ -1,10 +1,10 @@
 <?php
 /**
- * @package     Getsquare_Adminpayments
- * @author      Getsquare magento@getsquare.co.uk
- * @copyright   2014 GetSquare
+ * @package     GetCommerce_AdminPayments
+ * @author      GetCommerce hello@getcommerce.com
+ * @copyright   2015 GetCommerce
  */
-class Getsquare_Adminpayments_Model_System_Config_Source_Payments
+class GetCommerce_AdminPayments_Model_System_Config_Source_Payments
 {
     /**
      * Options getter
@@ -14,24 +14,15 @@ class Getsquare_Adminpayments_Model_System_Config_Source_Payments
     public function toOptionArray()
     {
         $methods = Mage::helper('payment')->getPaymentMethods();
-        $internalMethods = array();
         foreach ($methods as $methodCode => $methodData) {
-            if(!isset($methodData['model'])) {
-                continue;
-            }
             $methodInstance = Mage::getModel($methodData['model']);
             if(!$methodInstance) {
                 continue;
             }
             if($methodInstance->canUseInternal()) {
-                if($methodInstance->getTitle()) {
-                    $label = $methodInstance->getTitle();
-                } else {
-                    $label = $methodInstance->getCode();
-                }
                 $internalMethods[] = array(
                     'value' => $methodInstance->getCode(),
-                    'label' => $label
+                    'label' => $methodInstance->getTitle()
                 );
             }
         }

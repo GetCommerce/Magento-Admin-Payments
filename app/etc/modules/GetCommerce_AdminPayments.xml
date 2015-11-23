@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Getsquare_AdminPayments>
+        <GetCommerce_AdminPayments>
             <active>true</active>
             <codePool>community</codePool>
-        </Getsquare_AdminPayments>
+        </GetCommerce_AdminPayments>
     </modules>
 </config>

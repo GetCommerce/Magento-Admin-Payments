@@ -1,19 +1,18 @@
 <?php
 /**
- * @package     Getsquare_Adminpayments
- * @author      Getsquare magento@getsquare.co.uk
- * @copyright   2014 GetSquare
+ * @package     GetCommerce_AdminPayments
+ * @author      GetCommerce hello@getcommerce.com
+ * @copyright   2015 GetCommerce
  */
-class Getsquare_Adminpayments_Model_Observer
+class GetCommerce_AdminPayments_Model_Observer
 {
     /**
-     * Enable Payement Methods as per the the
-     * store config
+     * Enable Payment Methods as per the store config
      * 
      * @param  Varien_Event_Observer $observer
      * @return void
      */
-    public function enablePayementMethods(Varien_Event_Observer $observer)
+    public function enablePaymentMethods(Varien_Event_Observer $observer)
     {
         $methodInstance = $observer->getEvent();
         $paymentMethod = $methodInstance->getMethodInstance();

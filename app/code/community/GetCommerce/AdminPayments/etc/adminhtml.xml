@@ -9,7 +9,7 @@
                             <config>
                                 <children>
                                     <adminpayments translate="title">
-                                        <title>GetSquare - Admin Payments</title>
+                                        <title>GetCommerce - Admin Payments</title>
                                     </adminpayments>
                                 </children>
                             </config>

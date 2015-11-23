@@ -1,4 +1,4 @@
-#Getsquare_AdminPayments (Alvie)
+#GetCommerce_AdminPayments
 A Magento extension which allows compatible Payment Methods to be enabled for the Admin (backend) only.
 
 ##Description
@@ -10,7 +10,7 @@ The default behaviour for Magento is that when a Payment Method is enabled it ap
 If you make use of modman use the "modman clone" command from the root of your Magento instance to install. If you don't use modman download the zip or clone repository and merge (excluding the modman file) with your Magento instance.
 
 ## Settings
-Please see System > Configuration > Getsquare - Admin Payments
+Please see System > Configuration > GetCommerce - Admin Payments
 
 ### Notes
 For current versions of Magento Google Checkout still features as a method within the codebase although it is not an active gateway, as this method does not have an associated label this displays in empty line in the multi-select within the settings. 

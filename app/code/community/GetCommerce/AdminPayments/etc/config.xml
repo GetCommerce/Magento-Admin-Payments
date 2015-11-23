@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Getsquare_AdminPayments>
-            <version>1.0.2</version>
-        </Getsquare_AdminPayments>
+        <GetCommerce_AdminPayments>
+            <version>1.0.0</version>
+        </GetCommerce_AdminPayments>
     </modules>
     <global>
         <helpers>
             <adminpayments>
-                <class>Getsquare_AdminPayments_Helper</class>
+                <class>GetCommerce_AdminPayments_Helper</class>
             </adminpayments>
         </helpers>
         <models>
             <adminpayments>
-                <class>Getsquare_Adminpayments_Model</class>
+                <class>GetCommerce_AdminPayments_Model</class>
             </adminpayments>
         </models>
     </global>
@@ -21,11 +21,11 @@
         <events>
             <payment_method_is_active>
                 <observers>
-                    <getsquare_admin_payments>
+                    <getcommerce_admin_payments>
                         <type>model</type>
-                        <class>Getsquare_Adminpayments_Model_Observer</class>
-                        <method>enablePayementMethods</method>
-                    </getsquare_admin_payments>
+                        <class>GetCommerce_AdminPayments_Model_Observer</class>
+                        <method>enablePaymentMethods</method>
+                    </getcommerce_admin_payments>
                 </observers>
             </payment_method_is_active>
         </events>
